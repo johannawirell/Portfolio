@@ -1,5 +1,5 @@
 header {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .container {
@@ -30,6 +30,51 @@ h1 {
 
 h4 {
     font-weight: 100;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 12px 20px;
+    background-color: #7a5cc0;
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #e0e0e0; /* Lätt mörkare bakgrund vid hover */
+}
+
+button img {
+    height: 24px; /* Justera höjden på ikonen */
+    margin-right: 10px; /* Avstånd mellan ikonen och texten */
+}
+
+button:active {
+    background-color: #d0d0d0; /* Ändra bakgrund när knappen trycks ned */
+}
+
+.github {
+    height: 45px;
+}
+
+.contact-btn {
+    /* height: 50px; */
+    /* width: 100px; */
+    /* margin-right: 50%; */
 }
 
 @media screen and (max-width: 1024px) {
