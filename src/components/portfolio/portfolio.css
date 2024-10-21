@@ -1,0 +1,26 @@
+.projects-container {
+    padding: 40px;
+  }
+  
+  .projects-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .projects {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .projects::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .projects::-webkit-scrollbar-thumb {
+    background-color: #0366d6;
+    border-radius: 10px;
+  }
+  
