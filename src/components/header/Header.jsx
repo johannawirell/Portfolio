@@ -4,9 +4,13 @@ import ME_PATH from '../../assets/me.jpeg';
 import GITHUB_PATH from '../../assets/github.jpeg';
 
 export const Header = () => {
+  const openGitHub = () => {
+    window.open('https://github.com/johannawirell', '_blank');
+  };
+
   return (
-    <header>
-      <div className="container">
+    <>
+      <div className="container-header">
         <div className="profile">
           <h3>Hello! I'm</h3>
           <h1>Johanna Wirell</h1>
@@ -19,14 +23,13 @@ export const Header = () => {
         </div>
       </div>
       <div className="contact">
-        <button className="contact-btn">
+        <button className="contact-btn" onClick={openGitHub}>
           <img src={GITHUB_PATH} alt="" className='github'/>
           Github
           </button>
         <button className="contact-btn">Let's talk</button>
       </div>
-    </header>
-
+      </>
 
   );
 };
