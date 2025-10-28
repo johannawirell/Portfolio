@@ -9,7 +9,7 @@ export const Header = () => {
     <>
       <div className="container-header">
         <div className="profile">
-          <h3>Hej! Jag heter</h3>
+          <h3>Hej, Jag heter</h3>
           <h1>Johanna Wirell</h1>
           <h3>Fullstack developer</h3>
           <h4>Jag arbetar idag som mjukvaruutvecklare och teamledare på Saab AB, där jag utvecklar
