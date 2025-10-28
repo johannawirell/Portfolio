@@ -1,23 +1,20 @@
-import React from 'react'
-import './about.css'
+import React from 'react';
+import './about.css';
 
 export const About = () => {
   return (
-    <section className="about-section">
-      <h2>About Me</h2>
+    <section className="about-section" id="about">
+      <h2>Om mig</h2>
       <p>
-        Jag är en passionerad <strong>Fullstack Developer</strong> med fokus på att skapa 
-        moderna, användarvänliga webbapplikationer. 
-        Jag har erfarenhet inom frontend, backend och databashantering, 
-        samt ett stort intresse för UI/UX och clean code.
+        Jag är en engagerad <strong>Software Engineer</strong> med erfarenhet inom 
+        både <strong>frontend och backend</strong>. Jag gillar att kombinera teknik, logik och 
+        design för att skapa användarvänliga och skalbara lösningar.
       </p>
       <p>
-        Jag har tidigare arbetat med projekt som innefattar 
-        <strong> React, Node.js, Express, MongoDB, Java och C++</strong>.
-        Jag trivs med problemlösning, samarbete och att ständigt lära mig nya tekniker.
+        Mina främsta språk och ramverk är <strong>C++, Java, JavaScript, React, Node.js</strong> 
+        och <strong>MongoDB</strong>. Jag har även arbetat med <strong>Fortran</strong> och 
+        <strong> Ada</strong> inom flygsystemutveckling.
       </p>
     </section>
-  )
-}
-
-export default About
+  );
+};

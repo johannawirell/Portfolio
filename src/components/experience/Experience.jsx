@@ -1,25 +1,34 @@
-import React from 'react'
-import './experience.css'
+import React from 'react';
+import './experience.css';
 
 export const Experience = () => {
   const experiences = [
     {
-      company: "Frilans / Eget",
-      role: "Fullstack Developer",
-      period: "2023 – pågående",
-      description: "Utvecklat fullstackapplikationer, fokuserat på React, Node.js, Express och MongoDB."
+      company: "Saab AB",
+      role: "Software Engineer & Teamledare",
+      period: "2023 – Nuvarande",
+      description:
+        "Utvecklar mjukvara och simuleringsmodeller för flygplanssystem. Ansvarar för planering, handledning och kvalitet i ett mindre utvecklingsteam. Arbetar med C++, Fortran, Ada och Git.",
     },
     {
-      company: "Linnéuniversitetet",
-      role: "Systemutvecklingstudent",
-      period: "2021 – 2024",
-      description: "Studier inom webbutveckling, programmering, databaser och mjukvarudesign."
-    }
+      company: "Olivia Personlig Assistans",
+      role: "Samordnare & personlig assistent",
+      period: "2017 – 2023",
+      description:
+        "Ledde personalgrupp, ansvarade för schema och personalfrågor samt bistod i vård och stöd i vardagen.",
+    },
+    {
+      company: "Cloetta / Danske Finans / PostNord",
+      role: "Administrativa & kundnära roller",
+      period: "2016 – 2020",
+      description:
+        "Utvecklade färdigheter inom kundservice, kommunikation och administration under flera uppdrag.",
+    },
   ];
 
   return (
-    <section className="experience-section">
-      <h2>Experience</h2>
+    <section className="experience-section" id="experience">
+      <h2>Arbetslivserfarenhet</h2>
       <div className="experience-list">
         {experiences.map((exp, i) => (
           <div className="experience-item" key={i}>
@@ -31,7 +40,5 @@ export const Experience = () => {
         ))}
       </div>
     </section>
-  )
-}
-
-export default Experience
+  );
+};

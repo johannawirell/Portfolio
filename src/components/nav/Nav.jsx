@@ -13,7 +13,7 @@ export const Nav = () => {
       <div className='nav-links'>
         <span onClick={() => scrollToSection('about')}>About</span>
         <span onClick={() => scrollToSection('experience')}>Experience</span>
-        <span onClick={() => scrollToSection('services')}>Services</span>
+        <span onClick={() => scrollToSection('skills')}>Skills</span>
         <span onClick={() => scrollToSection('portfolio')}>Portfolio</span>
         <span onClick={() => scrollToSection('contact')}>Contact</span>
       </div>
