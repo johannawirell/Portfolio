@@ -24,6 +24,8 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Trigger Hostinger deployment webhook
+      - name: Deploy to Hostinger
         run: |
-          curl -X POST https://webhooks.hostinger.com/deploy/8e006c4a43947f8b839275784f1fa74e
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{"ref": "refs/heads/main"}' \
+          https://webhooks.hostinger.com/deploy/8e006c4a43947f8b839275784f1fa74e
