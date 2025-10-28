@@ -19,7 +19,7 @@
   
   @media (max-width: 768px) {
     .about-section {
-      text-align: center;
+      /* text-align: center; */
       padding: 3rem 1.5rem;
     }
   }
