@@ -12,7 +12,7 @@ import { Footer } from './components/footer/Footer'
 export const App = () => {
   return (
     <>
-      <Nav />
+      <div id="nav"><Nav /></div>
       <main>
         <section id="header"><Header /></section>
         <section id="about"><About /></section>

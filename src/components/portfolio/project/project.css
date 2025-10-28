@@ -1,5 +1,5 @@
 .project {
-  background-color: #fff;
+  background: #2c1450;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
@@ -10,6 +10,9 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project:hover {
@@ -20,29 +23,35 @@
 .project h3 {
   font-size: 1.4rem;
   margin-bottom: 8px;
-  color: #111;
+  color: #ffffff;
   font-weight: 600;
 }
 
+.project h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #b49aff;
+}
+
 .project p {
-  color: #333;
+  color: #ffffff;
   margin: 5px 0;
   line-height: 1.4;
 }
 
 .github-link {
-  color: #0366d6;
+  color: #b49aff;
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
-  margin-top: 8px;
+  margin-top: auto;
+  padding-top: 12px;
 }
 
 .github-link:hover {
   text-decoration: underline;
 }
 
-/* --- Modal overlay --- */
 .project-modal-overlay {
   position: fixed;
   inset: 0;
@@ -54,7 +63,6 @@
   animation: fadeIn 0.3s ease-out;
 }
 
-/* --- Modal fönster --- */
 .project-modal {
   background: #fff;
   padding: 30px;
@@ -80,14 +88,15 @@
 
 .close-modal {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 8px;
+  right: 12px;
   background: none;
   border: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #444;
   cursor: pointer;
   transition: transform 0.2s;
+  z-index: 10000;
 }
 
 .close-modal:hover {
@@ -95,7 +104,6 @@
   color: black;
 }
 
-/* --- Video-stil --- */
 .video-container {
   width: 100%;
   margin: 20px 0;
@@ -113,7 +121,6 @@
   border: none;
 }
 
-/* --- Ingen video --- */
 .no-video {
   font-style: italic;
   color: #777;
@@ -121,7 +128,6 @@
   text-align: center;
 }
 
-/* --- Animationer --- */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -130,4 +136,30 @@
 @keyframes scaleIn {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    width: 85%;
+    margin: 10px auto;
+  }
+
+  .project-modal {
+    width: 95%;
+    padding: 25px 20px;
+  }
+
+  .close-modal {
+    width: 5px;
+    top: -2px;
+    right: 10px;
+    font-size: 1.8rem;
+    z-index: 20000;
+  }
+
+  .github-link {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 16px;
+  }
 }

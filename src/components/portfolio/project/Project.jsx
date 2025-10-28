@@ -8,7 +8,7 @@ export const Project = ({ title, description, techStack, link, video, details })
     <>
       <div className="project" onClick={() => setOpen(true)}>
         <h3>{title}</h3>
-        <p>{description}</p>
+        <h4>{description}</h4>
         <p><strong>Tech Stack:</strong> {techStack}</p>
         <a
           href={link}
