@@ -24,8 +24,8 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Deploy to Hostinger
+      - name: Trigger Hostinger Auto Deployment
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d '{"ref": "refs/heads/main"}' \ 
+          -d '{"ref": "refs/heads/main"}' \
           https://webhooks.hostinger.com/deploy/7cf91da52e994f69e0b753512842d4ae
