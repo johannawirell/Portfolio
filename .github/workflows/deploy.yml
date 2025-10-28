@@ -13,18 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Clean install dependencies
         run: npm ci
 
-      - name: Build project
+      - name: Build React app
         run: npm run build
 
-      - name: Deploy to Hostinger
+      - name: Trigger Hostinger deployment webhook
         run: |
-          echo "Triggering Hostinger deployment..."
-          curl -X POST https://webhooks.hostinger.com/deploy/3239f3316b17bb261419a0c6122a2c35
+          curl -X POST https://webhooks.hostinger.com/deploy/8e006c4a43947f8b839275784f1fa74e
