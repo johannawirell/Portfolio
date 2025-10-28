@@ -11,11 +11,11 @@ export const Nav = () => {
     <nav className='container-nav'>
       <div className='header-item'>Johanna Wirell</div>
       <div className='nav-links'>
-        <span onClick={() => scrollToSection('about')}>About</span>
-        <span onClick={() => scrollToSection('experience')}>Experience</span>
-        <span onClick={() => scrollToSection('skills')}>Skills</span>
-        <span onClick={() => scrollToSection('portfolio')}>Portfolio</span>
-        <span onClick={() => scrollToSection('contact')}>Contact</span>
+        <span onClick={() => scrollToSection('about')}>Om</span>
+        <span onClick={() => scrollToSection('experience')}>Erfarenheter</span>
+        <span onClick={() => scrollToSection('skills')}>Tekniker</span>
+        <span onClick={() => scrollToSection('portfolio')}>Projekt</span>
+        <span onClick={() => scrollToSection('contact')}>Kontakt</span>
       </div>
     </nav>
   )

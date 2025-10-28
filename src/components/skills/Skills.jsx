@@ -19,18 +19,17 @@ import {
   SiDocker,
   SiKubernetes,
   SiGit,
+  SiGithub,
   SiGitlab,
   SiJira,
   SiConfluence,
   SiLinux,
   SiGitforwindows
 } from "react-icons/si";
-
 import { FaTools, FaCloud, FaTerminal } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { TbLayoutKanban } from "react-icons/tb";
 
-// import {SiMicrosoftazure} from '@meronex/icons/si/SiMicrosoftazure';
 export const Skills = () => {
   const skills = [
     { name: "JavaScript", icon: <SiJavascript /> },
@@ -54,7 +53,8 @@ export const Skills = () => {
     { name: "Docker", icon: <SiDocker /> },
     { name: "Kubernetes", icon: <SiKubernetes /> },
     { name: "Git", icon: <SiGit /> },
-    { name: "GitLab & Hub CI/CD", icon: <SiGitlab /> },
+    { name: "GitHub CI/CD", icon: <SiGithub /> },
+    { name: "GitLab CI/CD", icon: <SiGitlab /> },
     { name: "Jira", icon: <SiJira /> },
     { name: "Confluence", icon: <SiConfluence /> },
     { name: "Scrum", icon: <FaPeopleGroup /> },

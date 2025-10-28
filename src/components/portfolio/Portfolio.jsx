@@ -35,12 +35,28 @@ export const Portfolio = () => {
       link: "https://github.com/johannawirell/1DV502-a3/tree/main",
       video: "/project-movies/Java.mov",
       details: "Java-projekt med fokus på objektorienterad design, struktur och kodkvalitet."
+    },
+    {
+      title: "x",
+      description: "xx",
+      techStack: "xxx",
+      link: "https://github.com/johannawirell/1DV502-a3/tree/main",
+      video: "x",
+      details: "x."
+    },
+    {
+      title: "x",
+      description: "xx",
+      techStack: "xxx",
+      link: "https://github.com/johannawirell/1DV502-a3/tree/main",
+      video: "x",
+      details: "x."
     }
   ]
 
   return (
     <div className="projects-container">
-      <h2>Projects</h2>
+      <h2>Projekt</h2>
       <div className="projects">
         {projects.map((project, index) => (
           <Project
