@@ -22,4 +22,4 @@ yarn-debug.log*
 yarn-error.log*
 
 /public/project-movies/
-build/project-movies/
+/build
