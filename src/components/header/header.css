@@ -6,8 +6,9 @@
 }
 
 img {
-    border-radius: 45%;
-    height: 70vh;
+    margin: 2rem;
+    border-radius: 50%;
+    height: 500px;
 }
 
 .image {
