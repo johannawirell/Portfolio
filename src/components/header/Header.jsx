@@ -1,12 +1,9 @@
 import React from 'react';
 import './header.css';
 import ME_PATH from '../../assets/me.jpeg';
-import GITHUB_PATH from '../../assets/github.jpeg';
 
 export const Header = () => {
-  const openGitHub = () => {
-    window.open('https://github.com/johannawirell', '_blank');
-  };
+ 
 
   return (
     <>
@@ -22,13 +19,6 @@ export const Header = () => {
         <div className="image">
           <img src={ME_PATH} alt="Couldn't find asset" />
         </div>
-      </div>
-      <div className="contact">
-        <button className="contact-btn" onClick={openGitHub}>
-          <img src={GITHUB_PATH} alt="" className='github'/>
-          Github
-          </button>
-        <button className="contact-btn">Kontakt</button>
       </div>
       </>
 
