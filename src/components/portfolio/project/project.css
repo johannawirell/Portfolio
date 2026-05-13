@@ -106,7 +106,7 @@
   animation: scaleIn 0.3s ease-out;
 }
 
-.projects-container .project-modal h2 {
+.project-modal h2 {
   margin-top: 0;
   margin-bottom: 1rem;
   padding-right: 3rem;
@@ -205,7 +205,7 @@
     overflow-y: auto;
   }
 
-  .projects-container .project-modal h2 {
+  .project-modal h2 {
     font-size: 2rem;
     padding-right: 0;
   }
