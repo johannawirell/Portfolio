@@ -1,20 +1,20 @@
 .contact-section {
-  background: radial-gradient(circle at 10% 20%, #1b0d2e, #2c1450 70%);
-  color: #fff;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.18), rgba(31, 42, 68, 0.92));
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-white);
   text-align: center;
   padding: 5rem 2rem;
   position: relative;
 }
 
 .contact-section h2 {
-  font-size: 2.2rem;
-  color: #b49aff;
+  color: var(--color-white);
   margin-bottom: 1rem;
-  letter-spacing: 1px;
 }
 
 .contact-section p {
-  color: #ccc;
+  color: var(--color-muted);
   margin-bottom: 2.5rem;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -35,11 +35,11 @@
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background: rgba(180, 154, 255, 0.15);
-  border: 1px solid rgba(180, 154, 255, 0.3);
+  background: rgba(248, 250, 252, 0.08);
+  border: 1px solid rgba(248, 250, 252, 0.22);
   color: #fff;
   padding: 0.9rem 1.6rem;
-  border-radius: 12px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -48,9 +48,10 @@
 }
 
 .contact-btn:hover {
-  background: rgba(180, 154, 255, 0.4);
+  background: rgba(56, 189, 248, 0.18);
+  border-color: rgba(56, 189, 248, 0.45);
   transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(180, 154, 255, 0.3);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.22);
 }
 
 .contact-icon {

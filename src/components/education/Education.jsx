@@ -31,7 +31,7 @@ export const Education = () => {
   ];
 
   return (
-    <section className="experience-section" id="experience">
+    <section className="experience-section" id="education">
       <h2>Utbildning</h2>
       <div className="experience-list">
         {experiences.map((exp, i) => (

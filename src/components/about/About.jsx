@@ -11,9 +11,9 @@ export const About = () => {
         design för att skapa användarvänliga och skalbara lösningar.
       </p>
       <p>
-        Mina främsta språk och ramverk är <strong>C++, Java, JavaScript, React, Node.js</strong> 
-        och <strong>MongoDB</strong>. Jag har även arbetat med <strong>Fortran</strong> och 
-        <strong> Ada</strong> inom flygsystemutveckling.
+        Mina främsta språk och ramverk är <strong>C++, Java, JavaScript, React, Node.js</strong>{' '}
+        och <strong>MongoDB</strong>. Jag har även arbetat med <strong>Fortran</strong> och{' '}
+        <strong>Ada</strong> inom flygsystemutveckling.
       </p>
     </section>
   );

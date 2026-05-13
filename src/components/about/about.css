@@ -1,20 +1,25 @@
 .about-section {
-    padding: 4rem 2rem;
-    max-width: 1000px;
+    padding: 5rem 2rem;
+    max-width: 980px;
     margin: auto;
     text-align: left;
   }
   
   .about-section h2 {
-    font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #b49aff;
+    color: var(--color-white);
   }
   
   .about-section p {
     margin-bottom: 1rem;
     font-size: 1.1rem;
     line-height: 1.7;
+    color: var(--color-muted);
+  }
+
+  .about-section strong {
+    color: var(--color-accent);
+    font-weight: 800;
   }
   
   @media (max-width: 768px) {

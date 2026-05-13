@@ -41,7 +41,10 @@ export const Portfolio = () => {
 
   return (
     <div className="projects-container">
-      <h2>Projekt</h2>
+      <div className="section-heading">
+        <span>Utvalda arbeten</span>
+        <h2>Projekt</h2>
+      </div>
       <div className="projects">
         {projects.map((project, index) => (
           <Project

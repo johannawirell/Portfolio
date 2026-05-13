@@ -1,22 +1,32 @@
 .projects-container {
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
+    max-width: 1220px;
+    margin: 0 auto;
   }
  
-  
-  .projects-container h2 {
-    font-size: 2rem;
+  .section-heading {
     margin-bottom: 2.5rem;
-    color: #b49aff;
-    letter-spacing: 1px;
+  }
+
+  .section-heading span {
+    color: var(--color-accent);
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin-bottom: 0.55rem;
+    text-transform: uppercase;
+  }
+
+  .projects-container h2 {
+    color: var(--color-white);
   }
   
   .projects {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
   }
   
   .projects::-webkit-scrollbar {
@@ -24,7 +34,23 @@
   }
   
   .projects::-webkit-scrollbar-thumb {
-    background-color: #0366d6;
-    border-radius: 10px;
+    background-color: var(--color-accent);
+    border-radius: 8px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .projects {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .projects-container {
+      padding: 4rem 1rem;
+    }
+
+    .projects {
+      grid-template-columns: 1fr;
+    }
   }
   
