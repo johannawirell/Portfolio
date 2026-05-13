@@ -21,7 +21,7 @@
     content: "";
     position: absolute;
     inset: -14px;
-    border: 1px solid rgba(56, 189, 248, 0.45);
+    border: 1px solid rgba(var(--color-accent-rgb), 0.45);
     border-radius: 32px;
     transform: rotate(-4deg);
 }

@@ -1,5 +1,5 @@
 .contact-section {
-  background: linear-gradient(135deg, rgba(20, 184, 166, 0.18), rgba(31, 42, 68, 0.92));
+  background: linear-gradient(135deg, rgba(var(--color-accent-strong-rgb), 0.22), rgba(31, 42, 68, 0.92));
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   color: var(--color-white);
@@ -48,8 +48,8 @@
 }
 
 .contact-btn:hover {
-  background: rgba(56, 189, 248, 0.18);
-  border-color: rgba(56, 189, 248, 0.45);
+  background: rgba(var(--color-accent-rgb), 0.18);
+  border-color: rgba(var(--color-accent-rgb), 0.45);
   transform: translateY(-3px);
   box-shadow: 0 18px 34px rgba(0, 0, 0, 0.22);
 }
