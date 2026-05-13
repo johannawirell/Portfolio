@@ -40,7 +40,7 @@ export const Project = ({ title, description, techStack, link, video, details })
             </button>
             <h2>{title}</h2>
             <p>{details || description}</p>
-            <p><strong>Teknik:</strong> {techStack}</p>
+            <p><strong>Tekniker:</strong> {techStack}</p>
             
             {video ? (
               isYouTubeVideo ? (
