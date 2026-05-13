@@ -25,7 +25,7 @@ export const Portfolio = () => {
       description: "Realtidskommunikation via WebSockets.",
       techStack: "Node.js, Express, Socket.io",
       link: "https://github.com/johannawirell/1DV026-b2-realtime-web-application",
-      video: "/project-movies/Realtime.mov",
+      video: "",
       details: "Ett projekt där användare kan interagera i realtid – exempelvis för chatt eller datavisualisering."
     },
     {
@@ -33,25 +33,10 @@ export const Portfolio = () => {
       description: "Konsolbaserat projekt i Java.",
       techStack: "Java, Gradle",
       link: "https://github.com/johannawirell/1DV502-a3/tree/main",
-      video: "/project-movies/Java.mov",
+      video: "",
       details: "Java-projekt med fokus på objektorienterad design, struktur och kodkvalitet."
     },
-    {
-      title: "x",
-      description: "xx",
-      techStack: "xxx",
-      link: "https://github.com/johannawirell/1DV502-a3/tree/main",
-      video: "x",
-      details: "x."
-    },
-    {
-      title: "x",
-      description: "xx",
-      techStack: "xxx",
-      link: "https://github.com/johannawirell/1DV502-a3/tree/main",
-      video: "x",
-      details: "x."
-    }
+ 
   ]
 
   return (

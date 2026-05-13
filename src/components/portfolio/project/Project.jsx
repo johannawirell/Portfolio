@@ -3,6 +3,8 @@ import './project.css';
 
 export const Project = ({ title, description, techStack, link, video, details }) => {
   const [open, setOpen] = useState(false);
+  const isYouTubeVideo = video?.includes('youtube.com') || video?.includes('youtu.be');
+  const videoType = video?.toLowerCase().endsWith('.mov') ? 'video/quicktime' : 'video/mp4';
 
   return (
     <>
@@ -30,18 +32,18 @@ export const Project = ({ title, description, techStack, link, video, details })
             <p><strong>Teknik:</strong> {techStack}</p>
             
             {video ? (
-              video.includes('youtube.com') ? (
+              isYouTubeVideo ? (
                 <div className="video-container">
                   <iframe
-                    src={video.replace('watch?v=', 'embed/')}
+                    src={video.replace('watch?v=', 'embed/').replace('youtu.be/', 'youtube.com/embed/')}
                     title={`${title} demo`}
                     allow="autoplay; encrypted-media"
                     allowFullScreen
                   />
                 </div>
               ) : (
-                <video className="video-container" controls>
-                  <source src={video} type="video/mp4" />
+                <video className="video-container" controls preload="metadata">
+                  <source src={video} type={videoType} />
                   Din webbläsare stödjer inte videouppspelning.
                 </video>
               )
