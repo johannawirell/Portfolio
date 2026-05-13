@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment
+
+Pushes to `main` build the React app and deploy the generated `build/` folder to Hostinger for `johannawirell.com`.
+
+Add these GitHub repository secrets before deploying:
+
+- `HOSTINGER_FTP_SERVER`: FTP/FTPS host from Hostinger.
+- `HOSTINGER_FTP_USERNAME`: FTP username from Hostinger.
+- `HOSTINGER_FTP_PASSWORD`: FTP password from Hostinger.
+- `HOSTINGER_FTP_PROTOCOL`: Use `ftps` unless your Hostinger account requires `ftp`.
+- `HOSTINGER_FTP_SERVER_DIR`: Target folder for the domain, for example `/domains/johannawirell.com/public_html/` or `/public_html/` depending on the FTP root Hostinger shows.
+
+The `project-movies/` folder is kept directly on Hostinger and is excluded from deployment cleanup. Videos referenced as `/project-movies/...` do not need to be committed to git.
+
 ## Available Scripts
 
 In the project directory, you can run:

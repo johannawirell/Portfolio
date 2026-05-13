@@ -1,13 +1,19 @@
-name: Build and Deploy to Hostinger
+name: Deploy to johannawirell.com
 
 on:
   push:
     branches:
       - main
 
+concurrency:
+  group: production-deploy
+  cancel-in-progress: true
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout repository
@@ -16,7 +22,8 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
+          cache: npm
 
       - name: Clean install dependencies
         run: npm ci
@@ -24,8 +31,18 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Trigger Hostinger Auto Deployment
-        run: |
-          curl -X POST -H "Content-Type: application/json" \
-          -d '{"ref": "refs/heads/main"}' \
-          https://webhooks.hostinger.com/deploy/7cf91da52e994f69e0b753512842d4ae
+      - name: Deploy build to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          protocol: ${{ secrets.HOSTINGER_FTP_PROTOCOL || 'ftps' }}
+          local-dir: build/
+          server-dir: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            project-movies/**
+            **/project-movies/**
