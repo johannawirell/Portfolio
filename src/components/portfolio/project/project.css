@@ -83,7 +83,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  z-index: 2147483647;
+  padding: 1rem;
+  isolation: isolate;
   animation: fadeIn 0.3s ease-out;
 }
 
@@ -191,9 +193,21 @@
     scroll-snap-align: start;
   }
 
+  .project-modal-overlay {
+    align-items: flex-start;
+    padding: 0.75rem;
+  }
+
   .project-modal {
-    width: 95%;
-    padding: 25px 20px;
+    width: 100%;
+    max-height: calc(100dvh - 2rem);
+    padding: 4rem 1rem 1rem;
+    overflow-y: auto;
+  }
+
+  .projects-container .project-modal h2 {
+    font-size: 2rem;
+    padding-right: 0;
   }
 
   .close-modal {
