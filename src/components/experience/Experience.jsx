@@ -28,7 +28,10 @@ export const Experience = () => {
 
   return (
     <section className="experience-section" id="experience">
-      <h2>Arbetslivserfarenhet</h2>
+      <div className="section-heading">
+        <span>Bakgrund</span>
+        <h2>Arbetslivserfarenhet</h2>
+      </div>
       <div className="experience-list">
         {experiences.map((exp, i) => (
           <div className="experience-item" key={i}>

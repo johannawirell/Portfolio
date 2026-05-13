@@ -6,7 +6,9 @@ import "./contact.css";
 export const Contact = () => {
   return (
     <section className="contact-section" id="contact">
-      <h2>Kontakta mig</h2>
+      <div className="section-heading">
+        <h2>Kontakta mig</h2>
+      </div>
       <p>Jag är öppen för nya möjligheter, samarbeten och spännande projekt!</p>
 
       <div className="contact-links">

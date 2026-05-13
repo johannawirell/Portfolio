@@ -66,7 +66,10 @@ export const Skills = () => {
 
   return (
     <section className="skills-section" id="skills">
-      <h2>Tekniska kompetenser</h2>
+      <div className="section-heading">
+        <span>Stack</span>
+        <h2>Tekniska kompetenser</h2>
+      </div>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div
@@ -82,4 +85,3 @@ export const Skills = () => {
     </section>
   );
 };
-

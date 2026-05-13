@@ -68,6 +68,16 @@ section {
     scroll-margin-top: 90px;
 }
 
+main > section:not(#header) {
+    padding: 5rem 2rem;
+}
+
+main > section:not(#header) > * {
+    width: min(1120px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1,
 h2,
 h3,
@@ -78,6 +88,24 @@ h4 {
 h2 {
     font-size: clamp(1.8rem, 3vw, 2.35rem);
     line-height: 1.15;
+}
+
+.section-heading {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.section-heading span {
+    color: var(--color-accent);
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin-bottom: 0.55rem;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    color: var(--color-accent);
 }
 
 a {
@@ -109,6 +137,10 @@ a {
     
     #nav {
         display: none;
+    }
+
+    main > section:not(#header) {
+        padding: 4rem 1rem;
     }
 
 }

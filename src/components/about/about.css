@@ -1,13 +1,6 @@
 .about-section {
-    padding: 5rem 2rem;
-    max-width: 980px;
-    margin: auto;
+    padding: 0;
     text-align: left;
-  }
-  
-  .about-section h2 {
-    margin-bottom: 1.5rem;
-    color: var(--color-white);
   }
   
   .about-section p {
@@ -24,7 +17,7 @@
   
   @media (max-width: 768px) {
     .about-section {
-      padding: 3rem 1.5rem;
+      padding: 0;
     }
   }
   

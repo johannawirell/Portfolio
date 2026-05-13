@@ -32,7 +32,9 @@ export const Education = () => {
 
   return (
     <section className="experience-section" id="education">
-      <h2>Utbildning</h2>
+      <div className="section-heading">
+        <h2>Utbildning</h2>
+      </div>
       <div className="experience-list">
         {experiences.map((exp, i) => (
           <div className="experience-item" key={i}>

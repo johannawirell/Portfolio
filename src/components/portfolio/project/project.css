@@ -38,7 +38,7 @@
   font-size: clamp(1.35rem, 2vw, 1.7rem);
   line-height: 1.15;
   margin-bottom: 0.6rem;
-  color: var(--color-white);
+  color: var(--color-accent);
   font-weight: 800;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .project strong {
-  color: var(--color-white);
+  color: var(--color-accent);
 }
 
 .github-link {
